@@ -8,13 +8,22 @@ using System.Threading.Tasks;
 namespace UserTicketService.Test
 {
     [TestFixture]
-    internal class CalculatorTest
+    public class CalculatorTest
     {
         [Test]
-        public void AddAlwaysReturnsExpectedValue() 
+        public void AdditionalMustReturnCorrectValue() 
         {
             var calculator = new Calculator();
-            Assert.That(calculator.Add(10, 220), Is.EqualTo(230));
+            int result = calculator.Addition(50,10,34);
+            Assert.AreEqual(94, result);
+        }
+
+        [Test]
+        public void MultiplicationMustReturnCorrectValue() 
+        {
+            var calculator = new Calculator();
+            int result = calculator.Multiplication(3, 2, 20);
+            Assert.AreEqual(120, result);
         }
     }
 }

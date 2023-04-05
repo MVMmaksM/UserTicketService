@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UserTicketService.Test
+namespace UserTicketService
 {
-    public interface ITicketService
+    public interface IBookRepository
     {
-        int GetTicketPrice(int ticketId);
+        IEnumerable<Book> FindAll();
     }
 }

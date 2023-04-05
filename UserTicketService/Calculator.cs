@@ -8,6 +8,8 @@ namespace UserTicketService
 {
     public class Calculator
     {
-        public int Add(int one, int two) => one + two;
+        public int Addition(int numberOne, int numberTwo, int numberThree) => numberOne + numberTwo + numberThree;
+
+        public int Multiplication(int numberOne, int numberTwo, int numberThree) => numberOne * numberTwo * numberThree;
     }
 }

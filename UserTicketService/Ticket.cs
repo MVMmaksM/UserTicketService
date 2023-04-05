@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserTicketService.Test
 {
-    internal class Ticket
+    public class Ticket
     {
         public int Id { get; }
         public string Description { get; }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UserTicketService.Test
+namespace UserTicketService
 {
-    public interface ITicketService
+    public class User
     {
-        int GetTicketPrice(int ticketId);
+        public string? Name { get; set; }
     }
 }
